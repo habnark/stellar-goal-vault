@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
+import { useState } from 'react';
 import './TransactionPreviewModal.css';
 
 export interface TransactionPreviewData {
@@ -142,12 +143,7 @@ export function TransactionPreviewModal({
           <button className="btn-ghost" type="button" onClick={onCancel}>
             Cancel
           </button>
-          <button
-            className="btn-primary"
-            type="button"
-            onClick={onConfirm}
-            ref={confirmRef}
-          >
+          <button className="btn-primary" type="button" onClick={onConfirm} ref={confirmRef}>
             Confirm and Sign
           </button>
         </div>
